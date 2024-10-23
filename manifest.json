@@ -1,7 +1,7 @@
 {
   "name": "Homework AI",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "img/logo-16.png",
@@ -13,8 +13,6 @@
     "default_popup": "popup.html",
     "default_icon": "img/logo-48.png"
   },
-  "options_page": "options.html",
-  "devtools_page": "devtools.html",
   "background": {
     "service_worker": "service-worker-loader.js",
     "type": "module"
@@ -22,20 +20,17 @@
   "content_scripts": [
     {
       "js": [
-        "assets/index.js-loader-dffa9725.js"
+        "assets/index.js-loader-3bfe6033.js"
       ],
       "matches": [
         "http://*/*",
         "https://*/*"
       ],
       "css": [
-        "assets/index-d8e46b63.css"
+        "assets/index-943a2ebc.css"
       ]
     }
   ],
-  "side_panel": {
-    "default_path": "sidepanel.html"
-  },
   "web_accessible_resources": [
     {
       "matches": [],
@@ -56,13 +51,14 @@
       ],
       "resources": [
         "assets/chunk-39b5b250.js",
-        "assets/chunk-10c0be43.js"
+        "assets/chunk-c8eee6b9.js"
       ],
       "use_dynamic_url": true
     }
   ],
   "permissions": [
     "activeTab",
+    "scripting",
     "sidePanel",
     "storage"
   ]
